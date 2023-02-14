@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-	  "tslib": "2.2.0"
+	  "tslib": "2.2.0",
+	  "q": "^1.5.1"
   }
 }
 
