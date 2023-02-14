@@ -1,17 +1,12 @@
-name: status
+name: My GitHub Action
 
-on: 
-  pull_request:
-    branches: [main]
-  push:
-    branches: [main]
+on: [push]
 
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - name: run checks
-      continue-on-error: true
-      run: ./check.sh
+    - name: My Step
+      run: echo "My Step has completed."
+    - name: Set conclusion to neutral
+      run: echo "::set-output name=conclusion::neutral"
