@@ -13,4 +13,5 @@ jobs:
     - name: My Step
       run: echo "My Step has completed."
     - name: Set output
-      run: echo "::set-output name={conclusion}::{neutral}"
+      #run: echo "::set-output name={conclusion}::{neutral}"#
+      run: echo "{set-output}={conclusion}" >> $GITHUB_OUTPUT
