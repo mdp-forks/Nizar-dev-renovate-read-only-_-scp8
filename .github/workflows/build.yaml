@@ -12,5 +12,5 @@ jobs:
     steps:
     - name: My Step
       run: echo "My Step has completed."
-    - name: Set conclusion to neutral
-      run: echo "::set-output name=conclusion::neutral"
+    - name: Set output
+      run: echo "::set-output name={conclusion}::{neutral}"
