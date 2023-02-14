@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-	  "body-parser": "1.18.2",
+	  "tslib": "2.2.0"
   }
 }
